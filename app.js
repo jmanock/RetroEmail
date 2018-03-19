@@ -10,7 +10,9 @@ rl.on('line', function(line){
   var results = line.toUpperCase();
   if(results.includes('') && results.includes('')){
     results = results.split(/[\t]+/);
-    console.log(results);
+    for(var i = 0; i<results.length; i++){
+      console.log(results[i]);
+    }
   }
 }).on('close', function(){
   console.log('All Done!');
