@@ -12,17 +12,23 @@ rl.on('line', function(line){
   // var results = line;
   //count = count + 1;
   // if(results.includes('') && results.includes('')){
-  if(results.includes('@')){
-
+  if(results.includes('FERN PARK')){
+    //var lastName, firstName, middleName;
     results = results.split(/[\t]+/);
-
+    count = count + 1;
     for(var i = 0; i<results.length; i++){
-      if(results[i].includes('FERN PARK')){
-        count = count + 1;
+      var lastName = results[2];
+      var firstName = results[3];
+      var middleName = results[4];
+
+      if(results[i] === 'FERN PARK'){
+        var address = results[i-2];
+        var address2 = results[i-1];
       }
     }
+    console.log(count, firstName, lastName, address, address2);
   }
 }).on('close', function(){
-  console.log(count);
+
   console.log('All Done!');
 });
