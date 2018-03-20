@@ -20,13 +20,16 @@ rl.on('line', function(line){
       var lastName = results[2];
       var firstName = results[3];
       var middleName = results[4];
-
+      console.log(results[i]);
+      if(results[i].length >= 5 && i !== 1){
+        console.log(results[i]);
+      }
       if(results[i] === 'FERN PARK'){
         var address = results[i-2];
         var address2 = results[i-1];
       }
     }
-    console.log(count, firstName, lastName, address, address2);
+    //console.log(count, firstName, lastName, address, address2);
   }
 }).on('close', function(){
 
