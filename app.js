@@ -28,13 +28,13 @@ rl.on('line', function(line){
         var address2 = results[i-1];
       }
     }
-    //  if(count >= 100 && count < 200){
-    //    console.log(count, firstName, lastName, address, address2, test);
-    // }
-
-    if(count === 117){
-      console.log(results);
+     if(count >= 200 && count < 300){
+       console.log(count, firstName, lastName, address, address2, test);
     }
+
+    // if(count === 117){
+    //   console.log(results);
+    // }
 
     //console.log(count, firstName, lastName, address, address2);
   }
