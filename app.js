@@ -28,11 +28,11 @@ rl.on('line', function(line){
         var address2 = results[i-1];
       }
     }
-     if(count >= 200 && count < 300){
+     if(count >= 300 && count < 400){
        console.log(count, firstName, lastName, address, address2, test);
     }
 
-    // if(count === 117){
+    // if(count === 296){
     //   console.log(results);
     // }
 
