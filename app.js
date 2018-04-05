@@ -2,7 +2,7 @@ var fs = require('fs');
 var readline = require('readline');
 var stream = require('stream');
 
-var instream = fs.createReadStream('voters/orange2018.txt');
+//var instream = fs.createReadStream('voters/orange2018.txt');
 var instream = fs.createReadStream('voters/sem2018.txt');
 
 var outstream = new stream;
